@@ -1,9 +1,11 @@
 import React from 'react'; 
 import './header.css';
 import MenuIcon from '@mui/icons-material/Menu';
-import { IconButton } from '@mui/material';
+import { IconButton, Avatar } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import AppsIcon from '@mui/icons-material/Apps';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 function Header() {
     return (
@@ -19,7 +21,15 @@ function Header() {
             </div>
            
 
-            <div className="header_right"></div>
+            <div className="header_right">
+                <IconButton>
+                    <AppsIcon/>
+                </IconButton>
+                <IconButton>
+                    <NotificationsIcon/>
+                </IconButton>
+                <Avatar/>
+            </div>
         </div>
     )
 }
